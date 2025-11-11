@@ -1,0 +1,475 @@
+/* styles.css */
+html, body {
+    height: 100%; /* Ensure the html and body elements take the full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #a89bc0); /* Gradient background from light blue to soft purple */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.form-container {
+    max-width: 400px; /* Limit the width of the form */
+    margin: 100px auto; /* Center the form vertically and horizontally */
+    padding: 20px;
+    background: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form-title {
+    text-align: center; /* Center align the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark text color */
+}
+
+.form {
+    display: flex; /* Flexbox for the form layout */
+    flex-direction: column; /* Vertical layout */
+}
+
+.form-input {
+    margin-bottom: 15px; /* Space below inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.form-input:focus {
+    border-color: #3f2b96; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Specific styles for password input */
+.password-input {
+    position: relative; /* Positioning context for the eye icon */
+}
+
+.password-input input {
+    padding-right: 40px; /* Space for the eye icon */
+}
+
+.password-input .toggle-password {
+    position: absolute; /* Position the icon within the input */
+    right: 10px; /* Align to the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical position */
+    cursor: pointer; /* Pointer cursor for the icon */
+    color: #3f2b96; /* Icon color */
+}
+
+/* Button styling for form buttons */
+.form-button {
+    padding: 10px; /* Padding for buttons */
+    background-color: #6c63ff; /* Aesthetic violet color for buttons */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.form-button:hover {
+    background-color: #574bce; /* Darker violet on hover */
+}
+
+/* Header styles */
+.header {
+    display: flex; /* Flexbox for header layout */
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for the header */
+    background-color: rgba(108, 99, 255, 0.9); /* Semi-transparent violet color */
+    color: white; /* White text color */
+}
+
+.logo-container {
+    display: flex; /* Flexbox for logo and app name */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    width: 40px; /* Logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Spacing between logo and app name */
+}
+
+.app-name {
+    font-size: 24px; /* Font size for the app name */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.nav-links {
+    display: flex; /* Flexbox for navigation links */
+    align-items: center; /* Center items vertically */
+}
+
+.logout-button {
+    background: transparent; /* Keep the background transparent */
+    border: none; /* No border */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Flex container */
+    align-items: center; /* Center items vertically */
+}
+
+.logout-button svg {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Dashboard styles */
+.dashboard {
+    padding: 20px; /* Padding around the dashboard */
+    text-align: center; /* Center align text */
+    background: linear-gradient(135deg, #e0e7ff, #a89bc0); /* Same lighter gradient background */
+    min-height: calc(100vh - 100px); /* Ensure it takes up full height */
+}
+
+.dashboard h1 {
+    font-size: 24px; /* Larger font size for the heading */
+    color: #fff; /* White text for better contrast */
+}
+
+.dashboard-options {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the options horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Space above the buttons */
+}
+
+.dashboard-button {
+    display: flex; /* Flexbox for icon and text */
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px 25px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #6c63ff; /* Aesthetic violet color for dashboard buttons */
+    color: white; /* White text color */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.dashboard-button:hover {
+    background-color: #574bce; /* Darker violet on hover */
+}
+
+.button-icon {
+    width: 20px; /* Fixed width for icons */
+    height: 20px; /* Fixed height for icons */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Files page styles */
+.files-container {
+    padding: 20px; /* Padding around the files container */
+}
+
+.search-form {
+    display: flex; /* Flexbox for search form layout */
+    gap: 10px; /* Space between input and buttons */
+    margin-bottom: 20px; /* Space below the search form */
+}
+
+.search-input {
+    flex: 1; /* Allow input to grow */
+    padding: 10px; /* Padding for input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button styling for search and clear buttons */
+.search-button,
+.clear-button, 
+.upload-button { /* Added upload-button class */
+    padding: 10px 15px; /* Padding for buttons */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.search-button {
+    background-color: #6c63ff; /* Aesthetic violet color for search button */
+}
+
+.search-button:hover {
+    background-color: #574bce; /* Darker shade on hover */
+}
+
+.clear-button {
+    background-color: #dc3545; /* Danger button color */
+}
+
+.clear-button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+/* File list styles */
+.file-list {
+    list-style: none; /* Remove list styling */
+    padding: 0; /* Remove padding */
+}
+
+.file-item {
+    display: flex; /* Flexbox for file item layout */
+    justify-content: space-between; /* Space between details and download button */
+    padding: 15px; /* Padding for each file item */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between file items */
+    background-color: #f9f9f9; /* Light background */
+}
+
+.file-details {
+    flex: 1; /* Allow details to grow */
+}
+
+/* Shared With section styles */
+.shared-with {
+    margin-top: 10px; /* Space above the shared with section */
+}
+
+.shared-with ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Indent the list */
+    margin: 5px 0; /* Margin around the list */
+}
+
+.shared-with li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+.shared-with small {
+    color: #666; /* Gray color for sent at text */
+    font-size: 12px; /* Smaller font size */
+}
+
+/* Button styling for download button */
+.button {
+    padding: 3px 10px; /* Decreased padding for smaller button */
+    background-color: #28a745; /* Success button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effects */
+.button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+/* Upload form styles */
+.upload-form-container {
+    max-width: 500px; /* Limit the width of the upload form */
+    margin: 50px auto; /* Center the form horizontally */
+    padding: 20px; /* Padding for the form */
+    background: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title for the upload section */
+.upload-form-title {
+    text-align: center; /* Center align the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark text color */
+    font-size: 24px; /* Larger font size */
+}
+
+/* Form styling for upload form */
+.form {
+    display: flex; /* Flexbox for the form layout */
+    flex-direction: column; /* Vertical layout */
+}
+
+/* Input styling for upload form */
+.form-input {
+    margin-bottom: 15px; /* Space below inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.form-input:focus {
+    border-color: #3f2b96; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling for upload form buttons */
+.form-button {
+    padding: 10px; /* Padding for buttons */
+    background-color: #6c63ff; /* Aesthetic violet color for buttons */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.form-button:hover {
+    background-color: #574bce; /* Darker violet on hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center align the error message */
+    margin-top: 10px; /* Space above the error message */
+}
+.back-button {
+    padding: 8px 12px;
+    background-color: #6c63ff; /* Match existing button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space below the button */
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #574bce; /* Darker shade on hover */
+}
+/* Responsive styles */
+@media (max-width: 600px) {
+    .form-container, .upload-form-container {
+        width: 90%; /* Allow containers to take more width on small screens */
+    }
+
+    .dashboard-options {
+        flex-direction: column; /* Stack buttons on small screens */
+        gap: 15px; /* Space between stacked buttons */
+    }
+
+    /* Optional: Adjust shared-with list for smaller screens */
+    .shared-with ul {
+        padding-left: 15px; /* Slightly reduce indentation */
+    }
+
+    .shared-with li {
+        font-size: 14px; /* Slightly increase font size for readability */
+    }
+
+    .shared-with small {
+        font-size: 10px; /* Adjust font size for sent at text */
+    }
+}
+/* Chatbot Toggle Button */
+.chatbot-toggle-button {
+    position: fixed;
+    bottom: 80px; /* Adjusted distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #6c63ff; /* Violet color for button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 50%; /* Circular button */
+    padding: 15px; /* Space inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1001; /* Ensures button is on top of other elements */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.chatbot-toggle-button:hover {
+    background-color: #574bce; /* Darker violet on hover */
+    transform: scale(1.1); /* Slight scale-up effect on hover */
+}
+
+.chatbot-toggle-button svg {
+    width: 20px; /* Icon size */
+    height: 20px; /* Icon size */
+}
+
+/* Chatbot Widget Styling */
+.chatbot-widget {
+    position: fixed;
+    bottom: 140px; /* Increase distance from the bottom */
+    right: 20px;   /* Keep it aligned to the right */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    width: 350px;  /* Width of the chatbot widget */
+    height: 500px; /* Height of the chatbot widget */
+    background: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: none; /* Initially hidden */
+}
+
+.chatbot-widget.active {
+    display: block; /* Display the chatbot when active */
+}
+
+
+/* Chatbot content (optional custom styles for messages, etc.) */
+.chatbot-header {
+    background-color: #6c63ff; /* Match button color */
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.chatbot-body {
+    padding: 15px;
+    height: calc(100% - 60px); /* Leave space for header */
+    overflow-y: auto;
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Chatbot input area (optional) */
+.chatbot-input {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.chatbot-input button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Optional: Adjust input and button on smaller screens */
+@media (max-width: 600px) {
+    .chatbot-widget {
+        width: 90%; /* Increase width for smaller screens */
+        height: 400px; /* Reduce height for smaller screens */
+    }
+
+    .chatbot-toggle-button {
+        bottom: 70px; /* Adjust position of the toggle button */
+        right: 10px; /* Adjust position of the toggle button */
+    }
+}
