@@ -28,7 +28,7 @@ P2P File Transfer System/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Ranj-001/P2P-File-Sharing-System.git
+git clone https://github.com/ShanuRocky/P2P-File-Sharing-System.git
 cd P2P-File-Sharing-System
 ```
 
